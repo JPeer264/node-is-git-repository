@@ -5,7 +5,7 @@
   "main": "build.js",
   "scripts": {
     "pretest": "npm run lint",
-    "test": "ava",
+    "test": "nyc ava",
     "lint": "eslint index.js",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "prepublish": "npm run babel",
