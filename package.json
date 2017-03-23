@@ -33,11 +33,6 @@
     "require": "babel-register",
     "babel": "inherit"
   },
-  "nyc": {
-    "exclude": [
-      "build.js"
-    ]
-  },
   "homepage": "https://github.com/JPeer264/node-is-git-repository#readme",
   "dependencies": {
     "execa": "^0.6.1"
