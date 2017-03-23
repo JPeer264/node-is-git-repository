@@ -1,7 +1,7 @@
 import { homedir } from 'os';
 import test from 'ava';
 
-import isGit from './';
+import isGit from './index';
 
 test('check if process.cwd() is a git repo', (t) => {
   t.true(isGit());
