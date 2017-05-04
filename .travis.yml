@@ -5,11 +5,10 @@ node_js:
   - "4"
   - "6"
 install:
-  - npm i -g npm
-  - npm install
-script: npm test
+  - yarn
 notifications:
   email:
     on_failure: change
+    on_success: change
 after_success:
   - npm run coveralls
