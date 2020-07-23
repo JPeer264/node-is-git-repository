@@ -1,26 +1,28 @@
-# Test against this version of Node.js
 environment:
   matrix:
-    # node.js
-    - nodejs_version: "4"
-    - nodejs_version: "6"
+    - nodejs_version: "10"
+    - nodejs_version: "12"
+    - nodejs_version: "14"
 
-# Install scripts. (runs after repo cloning)
+platform:
+  - x64
+
 install:
   # Get the latest stable version of Node.js or io.js
-  - ps: Install-Product node $env:nodejs_version
+  - ps: |
+      try {
+      Install-Product node $env:nodejs_version $env:platform
+      } catch {
+      echo "Unable to install node $env:nodejs_version, trying update..."
+      Update-NodeJsInstallation (Get-NodeJsLatestBuild $env:nodejs_version) $env:platform
+      }
   # install modules
   - npm config set loglevel warn
   - npm i -g npm
-  - npm i
+  - npm ci
 
-# Post-install test scripts.
 test_script:
-  # Output useful info for debugging.
-  - node --version
-  - npm --version
-  # run tests
+  - npm run lint
   - npm test
 
-# Don't actually build.
 build: off

@@ -1,4 +1,4 @@
-index.js
-.nyc_output
+index.ts
+test.spec.ts
 npm-debug.log
 coverage
