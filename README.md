@@ -1,6 +1,8 @@
 # is-git-repository
 
-[![Build Status](https://travis-ci.com/JPeer264/node-is-git-repository.svg?branch=master)](https://travis-ci.com/JPeer264/node-is-git-repository) [![Coverage Status](https://coveralls.io/repos/github/JPeer264/node-is-git-repository/badge.svg?branch=master)](https://coveralls.io/github/JPeer264/node-is-git-repository?branch=master)
+[![Build Status](https://travis-ci.com/JPeer264/node-is-git-repository.svg?branch=master)](https://travis-ci.com/JPeer264/node-is-git-repository)
+[![Build status](https://ci.appveyor.com/api/projects/status/candvk0h292r03q2?svg=true)](https://ci.appveyor.com/project/JPeer264/node-is-git-repository)
+[![Coverage Status](https://coveralls.io/repos/github/JPeer264/node-is-git-repository/badge.svg?branch=master)](https://coveralls.io/github/JPeer264/node-is-git-repository?branch=master)
 
 Checks synchronously if a specific directory is a git repository
 
