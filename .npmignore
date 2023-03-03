@@ -1,4 +1,7 @@
 index.ts
-test.spec.ts
+__tests__
 npm-debug.log
 coverage
+.github
+jest.config.js
+.eslintignore
