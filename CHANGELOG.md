@@ -1,3 +1,7 @@
+3.0.0 - January, 14 2025
+
+* 29badf4 Feat: add esm (JPeer264)
+
 2.0.0 - July, 23 2020
 
 - cc8789d Docs: master -> main (JPeer264)
